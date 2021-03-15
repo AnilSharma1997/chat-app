@@ -1,0 +1,23 @@
+<div class="join-container">
+    <header class="join-header">
+        <h1>ChatApp</h1>
+    </header>
+    <main class="join-main">
+        <form action="chat.html">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" [(ngModel)]="user" [ngModelOptions]="{standalone: true}" 
+                    id="username" placeholder="Enter username...">
+            </div>
+            <div class="form-control">
+                <label for="room">Room</label>
+                <select name="roomInput" id="roomInput" [(ngModel)]="room" [ngModelOptions]="{standalone: true}">
+                    <option value="Room 1">Room 1</option>
+                    <option value="Room 2">Room 2</option>
+                    <option value="Room 3">Room 3</option>
+                </select>
+            </div>
+            <button class="btn" style="background: white;color: black;" (click)="joinChat()">Join Chat</button>
+        </form>
+    </main>
+</div>
