@@ -1,4 +1,4 @@
-# Local Chat App
+# Chat App
 
 This is a real time chat app where multiple users can chat in different rooms. Used socket.io library for real time data update.
 
